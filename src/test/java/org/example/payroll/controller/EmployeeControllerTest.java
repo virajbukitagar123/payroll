@@ -26,6 +26,6 @@ class EmployeeControllerTest {
     @Test
     void getEmployee() {
         assertThat(this.testRestTemplate.getForObject("http://localhost:"+port+"/employees/2",String.class))
-                .contains("Frodo");
+                .contains("Bilbo");
     }
 }
